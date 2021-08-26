@@ -5,51 +5,44 @@
   padding: 0;
 }
 
-.top-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.white-bg {
+  width: 100%;
+  background: #fff;
 }
 
-nav .nav-bar {
-  background: #8a008d;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.purple-bg {
+  width: 100%;
+  background: #e3d9e2;
 }
 
-li {
+h1 {
   font-family: "Neucha", cursive;
-  font-size: 36px;
-  text-transform: uppercase;
-  list-style: none;
+}
+
+p {
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+input[type="submit"] {
+  font-family: "Neucha", cursive;
+  color: blue;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-.sub-menu {
+.bg-img {
+  width: 25vw;
+}
+
+.swiper {
+  height: 15vh;
+  width: 90vw;
+}
+
+.swiper-slide {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,10 +50,23 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  border: red 5px solid;
-  background-color: #8a008d;
-  width: inherit;
-  height: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: purple solid 5px;
+}
+
+.slide-img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 50%;
+}
+
+.cat-name {
+  font-family: "Neucha", cursive;
+  font-size: 6vw;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+.swiper {
+  height: 15vh;
+  width: 90vw;
+}
+
+.swiper-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: purple solid 5px;
+}
+
+.slide-img {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 50%;
+}
+.cat-name {
+  font-family: $neucha;
+  font-size: 6vw;
+}
