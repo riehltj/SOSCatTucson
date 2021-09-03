@@ -4,78 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-  />
-  <!-- Link Swiper's CSS -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-  />    <title>SOS Cat Tucson</title>
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>SOS Cat Tucson</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Neucha&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/7dc9293cae.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="/style.css" />
   </head>
-  <nav></nav>
 
   <body>
-    <div class="purple-bg">
-      <div id="cat-parent">
-        <div>
-          <h1>Become a Cat Parent Today!</h1>
-          <form action="/adopt.html">
-            <input type="submit" value="Adopt" />
-          </form>
-          <img class ="bg-img" src="/img/catSitting.svg" alt="Cute black cat sitting there" />
-        </div>
+    <nav>
+      <div class="nav-container"></div>
+    </nav>
+    <div class="cat-parent-container">
+      <div class="cat-parent">
+        <h1 class="cat-parent-title">Become a Cat Parent Today!</h1>
+        <form class="cat-parent-form" action="/adopt.html">
+          <!-- <button class="cat-parent-btn" type="submit"> -->
+          <button class="cat-parent-btn" type="submit">
+            <img src="./img/search.svg" alt="search icon" />
+            <h3>adopt</h3>
+          </button>
+        </form>
       </div>
+      <img
+        class="cat-parent-img bg-img"
+        src="/img/catSitting.svg"
+        alt="Cute black cat sitting there"
+      />
     </div>
 
     <div class="white-bg">
-      
       <!-- Slider main container -->
       <div class="swiper mySwiper">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img class = "slide-img" src="./img/cats/Alma.jpeg" alt="">
+            <img class="slide-img" src="./img/cats/Alma.jpeg" alt="" />
             <a href="#" class="cat-name">Alma</a>
-        
           </div>
           <div class="swiper-slide">
-              <img class = "slide-img" src="./img/cats/cash2.jpeg" alt="">
-              <a href ="#" class="cat-name">Cash</a href ="#">         
+            <img class="slide-img" src="./img/cats/cash2.jpeg" alt="" />
+            <a href="#" class="cat-name">Cash</a>
           </div>
 
-          <div class="swiper-slide"> 
-            <img class = "slide-img" src="./img/cats/catniss.jpeg" alt="">
-            <a href ="#" class="cat-name">Catniss</a href ="#">
-            
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/catniss.jpeg" alt="" />
+            <a href="#" class="cat-name">Catniss</a>
           </div>
-          <div class="swiper-slide">  
-            <img class = "slide-img" src="./img/cats/Chorus.jpeg" alt="">
-            <a href ="#" class="cat-name">Chorus</a href ="#">
-             
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/Chorus.jpeg" alt="" />
+            <a href="#" class="cat-name">Chorus</a>
           </div>
-          <div class="swiper-slide">   
-            <img class = "slide-img" src="./img/cats/Treble.jpeg" alt="">
-            <a href ="#" class="cat-name">Treble</a href ="#">
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/Treble.jpeg" alt="" />
+            <a href="#" class="cat-name">Treble</a>
           </div>
-
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
       </div>
-      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
 
     <div class="purple-bg">
-      <h1>A FEW MEOWS ABOUT US</h1>
+      <h1><a href="./about.html">A FEW MEOWS ABOUT US</a></h1>
       <p>
         SOS Cat Rescue AZ, Inc is a foster-based, volunteer-run, no kill,
         non-profit animal rescue group based out of Tucson AZ. The organization
@@ -122,9 +129,46 @@
         where we will give updates with current photos and stories.
       </p>
     </div>
-  </body>
 
-  <footer></footer>
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="./index.html">About SOS Cat Rescue AZ</a></li>
+        <li>
+          <a class ="dropdown-menu" href="#3"
+            ><span><i class="fas fa-chevron-down"></i></span>Adoption</a
+          >
+        </li>
+        <li>
+          <a class="dropdown-menu" href="#2"
+            ><span><i class="fas fa-chevron-down"></i> </span>Fostering</a
+          >
+
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">Foster Information</a></li>
+              <li><a href="#"></a>Foster Application</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Donate / Sponsor</a></li>
+        <li><a href="#">Social Media</a></li>
+        <li><a href="#">Rainbow Bridge</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+
+      <div class="disclaimer">
+        <img
+          class="footer-logo"
+          src="./img/catsos_logo_web_tagline_smaller.png"
+          alt="SOS cat tucson logo"
+        />
+        <h4 class="footer-disclaimer">
+          We refrain the right to refuse adoption for any reason.
+        </h4>
+      </div>
+    </footer>
+  </body>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./app/swiper.js"></script>
+  <script src="./app/footer.js"></script>
 </html>

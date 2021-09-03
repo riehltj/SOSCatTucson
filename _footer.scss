@@ -1,0 +1,45 @@
+footer {
+  margin: 2%;
+  color: $darkPurple;
+  font-family: $alegra;
+  font-size: 20px;
+}
+
+.footer-nav {
+  width: 80%;
+  margin: 2% auto 2% auto;
+  border-bottom: 2px solid $darkPurple;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+li {
+  width: 100%;
+  border-top: 2px solid $darkPurple;
+}
+li > a > span > i {
+  margin-right: 2%;
+}
+.disclaimer {
+  display: grid;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo {
+  width: 100%;
+  grid-column: 1/2;
+}
+
+.footer-disclaimer {
+  font-size: 16px;
+  grid-column: 3/4;
+}
+
+.dropdown {
+  display: none;
+}
