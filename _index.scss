@@ -1,9 +1,3 @@
-nav {
-  height: 8vh;
-  width: 100%;
-  background: #fff;
-  color: black;
-}
 .cat-parent-container {
   background: $lightPurple;
   padding: 2% 2% 2% 2%;
@@ -11,12 +5,12 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 15vh;
+  height: 25vw;
 }
 
 .cat-parent {
   width: 100%;
-  height: 15vh;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -28,10 +22,11 @@ nav {
 .cat-parent-btn {
   margin: auto;
   background: $darkPurple;
-  width: 20vh;
+  width: 35vw;
+  height: 100%;
   border-radius: 50px;
   border: none;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -39,19 +34,22 @@ nav {
 }
 
 .cat-parent-btn > h3 {
-  height: clamp(1.5rem, 4vw, 2.5rem);
+  height: clamp(1.5rem, 4vw, 5rem);
   font-family: $neucha;
   text-decoration: none;
   color: #fff;
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1rem, 3vw, 5rem);
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cat-parent-btn > img {
-  height: clamp(1rem, 3vw, 2rem);
+.cat-parent-btn-search {
+  color: white;
+  font-size: clamp(1rem, 3vw, 5rem);
+  margin-bottom: 0.25rem;
+  margin-right: 0.25rem;
 }
 .cat-parent-form {
   padding: 0;
@@ -67,4 +65,13 @@ nav {
 
 span > a {
   color: $darkPurple;
+}
+
+.header-float-img {
+  width: 10vw;
+  position: absolute;
+  margin: 0;
+  margin-left: 87vw;
+  margin-top: 3vw;
+  z-index: 1;
 }

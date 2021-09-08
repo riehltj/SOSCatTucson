@@ -2,7 +2,7 @@ footer {
   margin: 2%;
   color: $darkPurple;
   font-family: $alegra;
-  font-size: 20px;
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
 }
 
 .footer-nav {
@@ -16,7 +16,7 @@ footer {
   align-items: flex-start;
 }
 
-li {
+.footer-nav > li {
   width: 100%;
   border-top: 2px solid $darkPurple;
 }
@@ -31,15 +31,33 @@ li > a > span > i {
   align-items: center;
 }
 .footer-logo {
+  margin-left: 50%;
   width: 100%;
   grid-column: 1/2;
 }
 
 .footer-disclaimer {
-  font-size: 16px;
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin-right: 20%;
   grid-column: 3/4;
 }
 
 .dropdown {
   display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.dropdown > ul > li > a {
+  width: 80%;
+  margin-left: 10%;
+}
+.dropdown > ul {
+  width: 100%;
+}
+
+.dropdown > ul {
+  list-style-type: none;
 }
