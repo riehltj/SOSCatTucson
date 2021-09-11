@@ -1,0 +1,17 @@
+.contact-grid {
+  margin-top: 2vw;
+  display: grid;
+  width: 80%;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 5vw;
+  justify-content: center;
+  align-items: flex-start;
+}
+h4 {
+  width: 100%;
+}
+.info-icon {
+  margin: 0 2vw;
+  font-size: 7vw;
+}

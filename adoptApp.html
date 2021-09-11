@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <title>SOS Cat Tucson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7dc9293cae.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-container">
+        <a href="./index.html">
+          <img
+            class="nav-logo"
+            src="./img/catsos_logo_web_tagline_smaller.png"
+            alt="SOS Cat Tucson Logo"
+          />
+        </a>
+
+        <a href="tel:5204453889">
+          <span class="nav-icon material-icons-two-tone">call</span>
+        </a>
+        <a href="mailto:info@soscatrescueAZ.org">
+          <span class="nav-icon material-icons-two-tone">email</span>
+        </a>
+        <a class="nav-location" href="#">
+          <span class="nav-icon material-icons-two-tone">location_on</span>
+        </a>
+        <div class="location-popout-container">
+          <h2>
+            Send Donations or mail to SOS Cat Rescue AZ, P.O.Box 35002, Tucson,
+            AZ 85740-5002
+          </h2>
+        </div>
+        <a class="nav-menu" href="#">
+          <span class="nav-icon material-icons-two-tone">menu</span>
+        </a>
+      </div>
+    </nav>
+    <nav>
+      <div class="side-nav-container">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./adopt.html">Adopt</a></li>
+          <li><a href="./foster.html">Foster</a></li>
+          <li><a href="./donate.html">Donate</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./rainbow.html">Rainbow Bridge</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="purple-bg"><h1>Adoption Application</h1></div>
+    <form class="adoptionApp" action="#adopt">
+      <div class="white-bg-app">
+        <label for="catApp"
+          >Name of cat(s) you are interested in adopting:
+        </label>
+        <input id="catApp" name="catApp" type="text" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="whyApp"
+          >Why are you interested in adopting this cat?
+        </label>
+        <textarea id="whyApp" name="whyApp" rows="8" cols="5"></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="ageApp"
+          >Are you over 18 years of age? <span class="req">(required)</span>
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="yes18App" id="yes18App" />
+          <label for="yes18App">Yes</label>
+
+          <input type="checkbox" name="no18App" id="no18App" />
+          <label for="yes18App">No</label>
+        </div>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="nameApp">Name <span class="req">(required)</span></label>
+        <input name="nameApp" id="nameApp" type="text" />
+      </div>
+
+      <div class="white-bg-app">
+        <label for="telApp"
+          >Primary Phone Number <span class="req">(required)</span></label
+        >
+        <input type="tel" name="telApp" id="telApp" />
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="emailApp">Email<span class="req">(required)</span></label>
+        <input type="email" name="emailApp" id="emailApp" />
+      </div>
+
+      <div class="white-bg-app">
+        <label for="workApp">Place of Employment</label>
+        <input type="text" name="workApp" id="workApp" />
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="workTelApp">Work Phone</label>
+        <input type="text" name="workTelApp" id="workTelApp" />
+      </div>
+      <div class="white-bg-app">
+        <label for="addressApp">Home Address</label>
+        <input type="text" name="addressApp" id="addressApp" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="homeTypeApp"
+          >Type of Home You Live In<span class="req">(required)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="houseApp" id="houseApp" />
+          <label for="houseApp">House</label>
+          <input type="checkbox" name="aptApp" id="aptApp" />
+          <label for="aptApp">Apartment</label>
+          <input type="checkbox" name="condoApp" id="condoApp" />
+          <label for="condoApp">Condo</label>
+          <input type="checkbox" name="mobileHomeApp" id="mobileHomeApp" />
+          <label for="mobileHomeApp">Mobile Home</label>
+        </div>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="payHomeApp">Do You: </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="rentHomeApp" id="rentHomeApp" />
+          <label for="rentHomeApp">Rent</label>
+          <input type="checkbox" name="ownHomeApp" id="ownHomeApp" />
+          <label for="ownHomeApp">Own</label>
+          <input type="checkbox" name="parentsHomeApp" id="parentsHomeApp" />
+          <label for="parentsHomeApp">Live with Parents</label>
+        </div>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="petsAllowedApp">If you rent are pets allowed? </label>
+        <div class="checkbox-app">
+          <input
+            type="checkbox"
+            name="yesPetsAllowedApp"
+            id="yesPetsAllowedApp"
+          />
+          <label for="yesPetsAllowedApp">Yes</label>
+
+          <input
+            type="checkbox"
+            name="noPetsAllowedApp"
+            id="noPetsAllowedApp"
+          />
+          <label for="noPetsAllowedApp">No</label>
+        </div>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="ageApp"
+          >Does your landlord require a security deposit
+          <span class="req">proof paid required</span></label
+        >
+        <div class="checkbox-app">
+          <input type="checkbox" name="yesDepositApp" id="yesDepositApp" />
+          <label for="yesDepositApp">Yes</label>
+
+          <input type="checkbox" name="noDepositApp" id="noDepositApp" />
+          <label for="noDepositApp">No</label>
+        </div>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="kidsApp"
+          >Are there children in your home? If so, what are their ages?
+        </label>
+        <textarea name="kidsApp" id="kidsApp" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="allergyApp"
+          >Does anyone in your home have allergies to cats?
+        </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="allergyAppYes" id="allergyAppYes" />
+          <label for="houseApp">Yes</label>
+          <input type="checkbox" name="allergyAppNo" id="allergyAppNo" />
+          <label for="allergyAppNo">No</label>
+          <input type="checkbox" name="allergyAppUnk" id="allergyAppUnk" />
+          <label for="allergyAppUnk">Not Sure</label>
+        </div>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="petDoorApp">Does your home have a pet door? </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="yesPetDoorApp" id="yesPetDoorApp" />
+          <label for="yes18App">Yes</label>
+
+          <input type="checkbox" name="noPetDoorApp" id="noPetDoorApp" />
+          <label for="noPetDoorApp">No</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for="hearApp"
+          >How did you hear about SOS (Saving Orphan kittens and Senior Cats)?
+        </label>
+        <textarea name="hearApp" id="hearApp" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="currPetApp"
+          >List your current pet
+          <span class="req">please include gender, age, species etc.</span>
+        </label>
+        <textarea name="currPetApp" id="" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="spayApp">Are your current pets spayed/neutered? </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="yesSpayApp" id="yesSpayApp" />
+          <label for="yesSpayApp">Yes</label>
+
+          <input type="checkbox" name="noSpayApp" id="noSpayApp" />
+          <label for="noSpayApp">No</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="vaxApp"
+          >Are your current pets up-to-date on vaccinations?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="yesVaxApp" id="yesVaxApp" />
+          <label for="yesVaxApp">Yes</label>
+          <input type="checkbox" name="noVaxApp" id="noVaxApp" />
+          <label for="noVaxApp">No</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for="fivApp"
+          >Have your current cats been tested negative for FIV/FeLV?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="yesFivApp" id="yesFivApp" />
+          <label for="yesFivApp">Yes</label>
+          <input type="checkbox" name="noFivApp" id="noFivApp" />
+          <label for="noFivApp">No</label>
+        </div>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="dogApp">If you own dogs, are they good with cats? </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="dogAppYes" id="dogAppYes" />
+          <label for="dogAppYes">Yes</label>
+          <input type="checkbox" name="dogAppNo" id="dogAppNo" />
+          <label for="dogAppNo">No</label>
+          <input type="checkbox" name="dogAppUnk" id="dogAppUnk" />
+          <label for="dogAppUnk">Not Sure</label>
+        </div>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="awareApp"
+          >Are all family members aware that you are considering adopting a cat?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="yesAwareApp" id="yesAwareApp" />
+          <label for="yesAwareApp">Yes</label>
+          <input type="checkbox" name="noAwareApp" id="noAwareApp" />
+          <label for="noAwareApp">No</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="vetApp">Who is your veterinarian? </label>
+        <input type="text" name="vetApp" id="vetApp" />
+      </div>
+      <div class="white-bg-app">
+        <label for="visitApp"
+          >When was your last vet visit? What was the reason for your visit?
+        </label>
+        <textarea name="visitApp" id="visitApp" cols="30" rows="10"></textarea>
+      </div>
+      <div class="purple-bg-app">
+        <label for="callVetApp"
+          >Do you give us permission to contact your vet?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="callVetAppYes" id="callVetAppYes" />
+          <label for="callVetAppYes">Yes</label>
+          <input type="checkbox" name="callVetAppNo" id="callVetAppNo" />
+          <label for="callVetAppNo">No</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for="pastPetApp"
+          >Please list the pets you have owned in the past 5 years. Where do
+          they live now?
+        </label>
+        <textarea
+          name="pastPetApp"
+          id="pastPetApp"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="surrApp"
+          >Have you ever surrendered an animal to a shelter? If yes, please
+          explain.
+        </label>
+        <textarea name="surrApp" id="surrApp" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="sosApp">Have you previously adopted a cat from SOS? </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="sosAppYes" id="sosAppYes" />
+          <label for="sosAppYes">Yes</label>
+          <input type="checkbox" name="sosAppNo" id="sosAppNo" />
+          <label for="sosAppNo">No</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="declawApp"
+          >Are you considering having your adopted cat declawed?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="declawAppYes" id="declawAppYes" />
+          <label for="declawAppYes">Yes</label>
+          <input type="checkbox" name="declawAppNo" id="declawAppNo" />
+          <label for="declawAppNo">No</label>
+        </div>
+      </div>
+
+      <!-- on average how many, is the next one -->
+    </form>
+
+    <footer>
+      <ul class="footer-nav">
+        <li><a href="./index.html">About SOS Cat Rescue AZ</a></li>
+        <li>
+          <a class="dropdown-menu" href="#1">
+            <span>
+              <i class="fas fa-chevron-down"> </i>
+            </span>
+            Adoption</a
+          >
+
+          <div class="dropdown">
+            <ul>
+              <li><a href="./adopt.html">Adoption Information</a></li>
+              <li><a href="./adoptionApp.html">Adoption Application</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a class="dropdown-menu" href="#2">
+            <span>
+              <i class="fas fa-chevron-down"> </i>
+            </span>
+            Foster</a
+          >
+
+          <div class="dropdown">
+            <ul>
+              <li><a href="./foster.html">Foster Information</a></li>
+              <li><a href="./fosterApp.html">Foster Application</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./donate.html">Donate / Sponsor</a></li>
+        <li><a href="./socialMedia.html">Social Media</a></li>
+        <li><a href="./rainbow.html">Rainbow Bridge</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+
+      <div class="disclaimer">
+        <img
+          class="footer-logo"
+          src="./img/catsos_logo_web_tagline_smaller.png"
+          alt="SOS cat tucson logo"
+        />
+        <h4 class="footer-disclaimer">
+          We refrain the right to refuse adoption for any reason.
+        </h4>
+      </div>
+    </footer>
+  </body>
+
+  <script src="./app/nav.js"></script>
+  <script src="./app/footer.js"></script>
+  <script src="./app/catSel.js"></script>
+</html>

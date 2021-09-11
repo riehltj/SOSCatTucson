@@ -9,6 +9,10 @@
     />
 
     <title>SOS Cat Tucson</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -77,6 +81,71 @@
     <div class="purple-bg">
       <h1>SOS Cat Rescue Blog</h1>
     </div>
+
+    <div class="white-bg">
+      <h1>2020 Highlights</h1>
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/clover.jpeg" alt="clover" />
+            <a href="#" class="cat-name">Clover</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/maya.jpeg" alt="Maya" />
+            <a href="#" class="cat-name">Maya</a>
+          </div>
+
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/Tokyo.jpeg" alt="Tokyo" />
+            <a href="#" class="cat-name">Tokyo</a>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="slide-img"
+              src="./img/cats/adelaide.jpeg"
+              alt="adelaide"
+            />
+            <a href="#" class="cat-name">Adelaide</a>
+          </div>
+          <div class="swiper-slide">
+            <img class="slide-img" src="./img/cats/geneva.jpeg" alt="geneva" />
+            <a href="#" class="cat-name">Geneva</a>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="slide-img"
+              src="./img/cats/leonardo.jpeg"
+              alt="leonardo"
+            />
+            <a href="#" class="cat-name">Leonardo</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="purple-bg"><h1>Hospice Updates</h1></div>
+    <div class="white-bg">
+      <div class="blog-img">
+        <img
+          src="./img/cats/torvillandDean.jpeg"
+          alt="torville and Dean being cute"
+        />
+      </div>
+    </div>
+    <div class="purple-bg">
+      <p>
+        Today was a good day at the vet. I was poked as they had to draw blood
+        but the results were worth it. My numbers did not change and since I’m
+        feeling good, are eating and drinking alright, it was determined that my
+        foster parents should do what they did the past year (basically
+        showering me in TLC) and the vet wants to see me in another 6 months for
+        another check up. YAY! Good news ~Torvill
+      </p>
+    </div>
     <footer>
       <ul class="footer-nav">
         <li><a href="./index.html">About SOS Cat Rescue AZ</a></li>
@@ -129,8 +198,8 @@
       </div>
     </footer>
   </body>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./app/nav.js"></script>
   <script src="./app/footer.js"></script>
-  <script src="./app/catSel.js"></script>
+  <script src="./app/swiper.js"></script>
 </html>

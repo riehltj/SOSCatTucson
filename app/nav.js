@@ -1,6 +1,6 @@
 const sidebar = () => {
     menu = document.querySelector('.side-nav-container').classList;
-    hamburger = document.querySelector('.nav-icon').classList;
+    hamburger = document.querySelector('.nav-menu').classList;
     if (menu.contains('active')) {
         //collapse menu
         menu.remove('active');
@@ -46,7 +46,7 @@ document.addEventListener('click', function (event) {
 
     }
     else {
-        console.log(pointer);
+
         box.remove('active')
         menu.remove('active');
         hamburger.remove('active')

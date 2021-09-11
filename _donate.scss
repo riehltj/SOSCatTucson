@@ -1,0 +1,13 @@
+.wishlist {
+  font-size: clamp(1rem, 3vw, 2rem);
+  font-family: $alegra;
+  margin: 5% 10% 2% 10%;
+  z-index: 2;
+}
+.wishlist > li {
+  margin-left: 4vw;
+}
+
+.special-li {
+  color: $darkPurple;
+}

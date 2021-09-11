@@ -1,0 +1,45 @@
+.adoptionApp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.purple-bg-app {
+  width: 100%;
+  background: $lightPurple;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+  align-items: center;
+}
+.white-bg-app {
+  width: 100%;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+label {
+  margin: 2vw;
+}
+textarea {
+  width: 80%;
+}
+input {
+  margin: 2vw;
+}
+.req {
+  font-size: clamp(0.75rem, 3vw, 1.5rem);
+  color: $darkPurple;
+}
+.checkbox-list-app {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: repeat(1fr, 4);
+  justify-content: flex-start;
+  align-items: center;
+}
