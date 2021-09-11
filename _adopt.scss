@@ -42,15 +42,127 @@
 }
 .grid-container {
   display: grid;
+  position: relative;
   grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(4, 24%);
   gap: 2vw;
-  border: black 3px solid;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background: $darkPurple;
+  padding: 2%;
 }
 .cat-container {
+  position: relative;
+  background: $lightPurple;
+  z-index: -1;
+  border-radius: 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.cat-container::after {
+  content: "";
+  position: absolute;
+  background: white;
+  border-radius: 5%;
+  height: 18vw;
+  width: 18vw;
+  margin-bottom: 12vw;
+  z-index: -1;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.cat-container::before {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 18vw;
+  height: 6vw;
+  margin-top: 20vw;
+  border-radius: 5%;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  z-index: -1;
+}
+.cat-img {
+  margin-top: 4vw;
+}
+
+.cat-name-adopt {
+  margin-top: 6vw;
+  font-family: "Neucha", cursive;
+  font-size: clamp(1rem, 3vw, 3rem);
+  width: 18vw;
+  height: 6vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.cat-name-adopt > a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-container {
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  grid-template-rows: 0;
+  z-index: -1;
+  background: #fff;
+  border-radius: 2vw;
+  grid-column: 1/4;
+  transition: all 250ms ease-in-out;
+  margin-left: auto;
+}
+
+.details-container.active-adopt {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.flex {
+  display: flex;
+}
+
+.details-container > .cat-container {
+  width: 30%;
+  background: transparent;
+}
+.details-container > .cat-container:before,
+.details-container > .cat-container:after {
+  background: $lightPurple;
+}
+.details-container > .details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  // opacity: 0;
+}
+
+.details > .cat-name-adopt {
+  background: $lightPurple;
+  width: 20vw;
+  height: 8vw;
+  margin: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+.details > p {
+  font-size: clamp(0.75rem, 3vw, 5rem);
 }

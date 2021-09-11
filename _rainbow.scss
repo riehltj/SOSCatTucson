@@ -1,0 +1,14 @@
+.rainbow-wrapper > img {
+  width: 35vw;
+  height: 35vw;
+}
+.rainbow-wrapper {
+  background: $lightPurple;
+  width: 45vw;
+  height: 45vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2vw 2vw 2vw;
+  border-radius: 2vw;
+}

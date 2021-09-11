@@ -29,8 +29,12 @@ h1 {
   margin: 2% 10% 2% 10%;
   z-index: 2;
 }
+h3 {
+  text-transform: capitalize;
+}
 
-p {
+p,
+q {
   font-size: clamp(1rem, 3vw, 2rem);
   font-family: $alegra;
   margin: 2% 10% 2% 10%;
@@ -44,4 +48,12 @@ a {
 
 .bg-img {
   width: 20vw;
+}
+
+.title {
+  width: 100%;
+  margin: 2% 0 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
