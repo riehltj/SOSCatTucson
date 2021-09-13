@@ -95,6 +95,10 @@ a {
           align-items: center;
 }
 
+button {
+  padding: 1rem;
+}
+
 .swiper {
   height: 32vw;
   width: 80vw;
