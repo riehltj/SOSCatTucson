@@ -96,7 +96,7 @@ a {
 }
 
 button {
-  padding: 1rem;
+  padding: 0.25rem;
 }
 
 .swiper {
@@ -342,11 +342,15 @@ li > a > span > i {
 }
 
 .footer-disclaimer {
+  margin: 0;
   font-size: clamp(1rem, 2vw, 2rem);
   margin-right: 20%;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  font-family: "Alegreya Sans", sans-serif;
+  text-transform: none;
+  z-index: 1;
 }
 
 .dropdown {
@@ -1132,6 +1136,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
 }
 
 .consent-form {
@@ -1177,5 +1182,10 @@ input {
   border-radius: 50px;
   width: 100%;
   padding: 1rem;
+}
+
+input[type="checkbox"] {
+  height: clamp(0.5rem, 3vw, 2rem);
+  width: clamp(0.5rem, 3vw, 2rem);
 }
 /*# sourceMappingURL=style.css.map */

@@ -48,6 +48,7 @@ input {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  height: 100%;
 }
 
 .consent-form {
@@ -77,4 +78,8 @@ input {
   border-radius: 50px;
   width: 100%;
   padding: 1rem;
+}
+input[type="checkbox"] {
+  height: clamp(0.5rem, 3vw, 2rem);
+  width: clamp(0.5rem, 3vw, 2rem);
 }
