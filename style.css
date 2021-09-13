@@ -1032,7 +1032,7 @@ h4 {
   font-size: 7vw;
 }
 
-.adoptionApp {
+.adoptApp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1060,9 +1060,9 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .white-bg-app {
@@ -1077,9 +1077,9 @@ h4 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 label {
@@ -1106,11 +1106,72 @@ input {
       grid-template-columns: 1fr 4fr;
   -ms-grid-rows: (4)[1fr];
       grid-template-rows: repeat(1fr, 4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkbox-app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.consent-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.submit-app-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.submit-app-container > button {
+  font-size: clamp(1.25rem, 4vw, 5rem);
+  font-family: "Neucha", cursive;
+  text-transform: uppercase;
+  margin: 4vw;
+  z-index: 2;
+  background: #8a008d;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  padding: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

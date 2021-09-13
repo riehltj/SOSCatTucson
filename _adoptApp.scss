@@ -1,4 +1,4 @@
-.adoptionApp {
+.adoptApp {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .white-bg-app {
   width: 100%;
@@ -20,7 +20,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 label {
@@ -40,6 +40,41 @@ input {
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: repeat(1fr, 4);
+  justify-content: center;
+  align-items: center;
+}
+.checkbox-app {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+
+.consent-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.submit-app-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-app-container > button {
+  font-size: clamp(1.25rem, 4vw, 5rem);
+  font-family: $neucha;
+  text-transform: uppercase;
+  margin: 4vw;
+  z-index: 2;
+  background: $darkPurple;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  padding: 1rem;
 }

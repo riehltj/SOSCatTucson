@@ -76,7 +76,7 @@
     </nav>
 
     <div class="purple-bg"><h1>Adoption Application</h1></div>
-    <form class="adoptionApp" action="#adopt">
+    <form class="adoptApp" action="./thankYou.html">
       <div class="white-bg-app">
         <label for="catApp"
           >Name of cat(s) you are interested in adopting:
@@ -87,7 +87,7 @@
         <label for="whyApp"
           >Why are you interested in adopting this cat?
         </label>
-        <textarea id="whyApp" name="whyApp" rows="8" cols="5"></textarea>
+        <textarea id="whyApp" name="whyApp" rows="4" cols="5"></textarea>
       </div>
       <div class="white-bg-app">
         <label for="ageApp"
@@ -197,7 +197,7 @@
         <label for="kidsApp"
           >Are there children in your home? If so, what are their ages?
         </label>
-        <textarea name="kidsApp" id="kidsApp" cols="30" rows="10"></textarea>
+        <textarea name="kidsApp" id="kidsApp" cols="30" rows="4"></textarea>
       </div>
 
       <div class="white-bg-app">
@@ -228,7 +228,7 @@
         <label for="hearApp"
           >How did you hear about SOS (Saving Orphan kittens and Senior Cats)?
         </label>
-        <textarea name="hearApp" id="hearApp" cols="30" rows="10"></textarea>
+        <textarea name="hearApp" id="hearApp" cols="30" rows="4"></textarea>
       </div>
 
       <div class="purple-bg-app">
@@ -236,7 +236,7 @@
           >List your current pet
           <span class="req">please include gender, age, species etc.</span>
         </label>
-        <textarea name="currPetApp" id="" cols="30" rows="10"></textarea>
+        <textarea name="currPetApp" id="" cols="30" rows="4"></textarea>
       </div>
 
       <div class="white-bg-app">
@@ -303,7 +303,7 @@
         <label for="visitApp"
           >When was your last vet visit? What was the reason for your visit?
         </label>
-        <textarea name="visitApp" id="visitApp" cols="30" rows="10"></textarea>
+        <textarea name="visitApp" id="visitApp" cols="30" rows="4"></textarea>
       </div>
       <div class="purple-bg-app">
         <label for="callVetApp"
@@ -325,7 +325,7 @@
           name="pastPetApp"
           id="pastPetApp"
           cols="30"
-          rows="10"
+          rows="4"
         ></textarea>
       </div>
 
@@ -334,7 +334,7 @@
           >Have you ever surrendered an animal to a shelter? If yes, please
           explain.
         </label>
-        <textarea name="surrApp" id="surrApp" cols="30" rows="10"></textarea>
+        <textarea name="surrApp" id="surrApp" cols="30" rows="4"></textarea>
       </div>
 
       <div class="white-bg-app">
@@ -358,7 +358,126 @@
         </div>
       </div>
 
-      <!-- on average how many, is the next one -->
+      <div class="white-bg-app">
+        <label for="aloneApp"
+          >On average, how many hours will the cat spend alone daily/nightly?
+          <span class="req">Hours per day.</span>
+        </label>
+        <input type="number" name="aloneApp" id="aloneApp" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="patioApp"
+          >Are you considering to give your adopted cat access to a screened-in
+          porch or patio?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="patioAppYes" id="patioAppYes" />
+          <label for="patioAppYes">Yes</label>
+          <input type="checkbox" name="patioAppNo" id="patioAppNo" />
+          <label for="patioAppNo">No</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for="sleepApp">Where will your adopted cat sleep? </label
+        ><textarea name="sleepApp" id="sleepApp" cols="30" rows="4"></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="timeApp">Where will the cat spend his or her time? </label>
+        <textarea name="timeApp" id="timeApp" cols="30" rows="4"></textarea>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="unwillApp"
+          >Under what circumstances would you be unable or unwilling to keep
+          your adopted cat?
+        </label>
+        <textarea name="unwillApp" id="unwillApp" cols="30" rows="4"></textarea>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="keepApp"
+          >What will you do with your adopted cat if you move or are otherwise
+          unable to keep it?
+        </label>
+        <textarea name="keepApp" id="keepApp" cols="30" rows="4"></textarea>
+      </div>
+      <div class="purple-bg-app">
+        <label for="homeVisitApp"
+          >Would you be agreeable to a scheduled home visit?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="homeVisitAppYes" id="homeVisitAppYes" />
+          <label for="homeVisitAppYes">Yes</label>
+          <input type="checkbox" name="homeVisitAppNo" id="homeVisitAppNo" />
+          <label for="homeVisitAppNo">No</label>
+        </div>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="adjTimeApp"
+          >How much adjustment time are you willing to give this cat in your
+          home?
+        </label>
+        <textarea
+          name="adjTimeApp"
+          id="adjTimeApp"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="purple-bg-app">
+        <label for="contactApp">
+          May we contact you in the future about your adopted cat?
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="contactAppYes" id="contactAppYes" />
+          <label for="contactAppYes">Yes</label>
+          <input type="checkbox" name="contactAppNo" id="contactAppNo" />
+          <label for="contactAppNo">No</label>
+        </div>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="dogApp"
+          ><b>Do you understand that: (Please check all that apply)</b
+          ><span class="req">(required)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="reqAppOne" id="reqAppOne" />
+          <label for="reqAppOne"
+            >Routine medical care for my adopted cat can cost hundreds of
+            dollars</label
+          >
+          <input type="checkbox" name="reqAppTwo" id="reqAppTwo" />
+          <label for="reqAppTwo"
+            >Emergency medical care can cost thousands of dollars</label
+          >
+          <input type="checkbox" name="reqAppThree" id="reqAppThree" />
+          <label for="reqAppThree"
+            >Your adopted cat will be solely your responsibility for the course
+            of its life (up to 20 years)</label
+          >
+        </div>
+      </div>
+
+      <div class="consent-form">
+        <p>
+          In initialing here, I agree that the above information is true and
+          accurate to the best of my knowledge, and I understand that SOS Cat
+          Rescue AZ has the right to approve or deny the application. If I am
+          approved by SOS Cat Rescue AZ to adopt an animal, I agree to all above
+          requirements. I acknowledge that if any of the information I have
+          provided is found to be untrue, inaccurate, or omitted that I am
+          agreeing to a mandatory forfeiture of my legal rights and ownership of
+          said cat(s) back to SOS Cat Rescue AZ and its Representatives. (Please
+          initial)
+        </p>
+        <input type="text" />
+
+        <div class="submit-app-container">
+          <button type="submit">submit</button>
+        </div>
+      </div>
     </form>
 
     <footer>
@@ -375,7 +494,7 @@
           <div class="dropdown">
             <ul>
               <li><a href="./adopt.html">Adoption Information</a></li>
-              <li><a href="./adoptionApp.html">Adoption Application</a></li>
+              <li><a href="./adoptApp.html">Adoption Application</a></li>
             </ul>
           </div>
         </li>
