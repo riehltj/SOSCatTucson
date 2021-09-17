@@ -74,7 +74,106 @@
         </ul>
       </div>
     </nav>
+    <div class="purple-bg"><h1>Foster Application</h1></div>
 
+    <form class="adoptApp" action="./thankYou.html">
+      <div class="white-bg-app">
+        <label for="hearApp">How did you hear about SOS Cat Rescue AZ?</label>
+        <input id="hearApp" name="hearApp" type="text" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="fosterName"
+          >Name <span class="req">(required)</span>
+        </label>
+        <input name="fosterName" id="fosterName" type="text" />
+      </div>
+      <div class="white-bg-app">
+        <label for="fosterAddress"
+          >Address (Street,City, Zip) <span class="req">(required)</span>
+        </label>
+        <input name="fosterAddress" id="fosterAddress" type="text" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="fosterEmail"
+          >Email<span class="req">(required)</span>
+        </label>
+        <input name="fosterEmail" id="fosterEmail" type="text" />
+      </div>
+      <div class="white-bg-app">
+        <label for="fosterCell"
+          >Cell Phone Number <span class="req">(required)</span>
+        </label>
+        <input name="fosterCell" id="fosterCell" type="tel" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="fosterWork">Work Phone Number </label>
+        <input name="fosterWork" id="fosterWork" type="tel" />
+      </div>
+      <div class="white-bg-app">
+        <label for="homeTypeFoster"
+          >Do You<span class="req">(required)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="fosterRent" id="fosterRent" />
+          <label for="fosterRent">Rent</label>
+          <input type="checkbox" name="aptApp" id="aptApp" />
+          <label for="aptApp">Own</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="landlordFoster"
+          >If you're renting, does your landlord allow pets?
+        </label>
+        <div class="checkbox-app">
+          <input
+            type="checkbox"
+            name="landlordFosterYes"
+            id="landlordFosterYes"
+          />
+          <label for="landlordFosterYes">Yes</label>
+
+          <input
+            type="checkbox"
+            name="landlordFosterNo"
+            id="landlordFosterNo"
+          />
+          <label for="landlordFosterNo">No</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for="kidsFoster"
+          >Are there children in your home? If so, what are their ages.
+        </label>
+        <textarea
+          name="kidsFoster"
+          id="kidsFoster"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="hrAloneFoster"
+          >On average, how many hours per day would the cat(s) be alone at home?
+        </label>
+        <input type="number" name="hrAloneFoster" id="hrAloneFoster" />
+      </div>
+      <div class="white-bg-app">
+        <label for="allergyFoster"
+          >Is anybody in the home allergic to cats?
+        </label>
+        <input type="number" name="allergyFoster" id="allergyFoster" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="petsOwnedFoster"
+          >Number of pets currently owned by you?
+          <span class="req">(required)</span>
+        </label>
+      </div>
+
+      <!-- Are there other cats in the home? If yes, are they spayed/neutered?
+ -->
+    </form>
     <footer>
       <ul class="footer-nav">
         <li><a href="./index.html">About SOS Cat Rescue AZ</a></li>
@@ -130,5 +229,4 @@
 
   <script src="./app/nav.js"></script>
   <script src="./app/footer.js"></script>
-  <script src="./app/catSel.js"></script>
 </html>
