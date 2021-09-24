@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
     />
 
+    <link rel="icon" type="image/x-icon" href="./img/favicon-16x16.png" />
     <title>SOS Cat Tucson</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -169,14 +170,380 @@
           >Number of pets currently owned by you?
           <span class="req">(required)</span>
         </label>
+        <input type="number" id="petsOwnedFoster" name="petsOwnedFoster" />
+      </div>
+      <div class="white-bg-app">
+        <label for="neuteredFoster"
+          >Are there other cats in the home? If yes, are they
+          spayed/neutered?</label
+        >
+
+        <input type="text" name="neuteredFoster" id="neuteredFoster" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="vaxFoster">Are your cats current on vaccinations? </label>
+        <input type="text" name="vaxFoster" id="vaxFoster" />
+      </div>
+      <div class="white-bg-app">
+        <label for="negTestFoster"
+          >Have your cats tested negative for FeLV/FIV?
+        </label>
+        <input type="text" name="negTestFoster" id="negTestFoster" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="catsLiveFoster">Where do your cats live? </label>
+        <div class="checkbox-list-app">
+          <input
+            type="checkbox"
+            name="catsLiveFosterIn"
+            id="catsLiveFosterIn"
+          />
+          <label for="houseApp">Inside</label>
+          <input
+            type="checkbox"
+            name="catsLiveFosterOut"
+            id="catsLiveFosterOut"
+          />
+          <label for="catsLiveFosterOut">Outside</label>
+          <input
+            type="checkbox"
+            name="catsLiveFosterBoth"
+            id="catsLiveFosterBoth"
+          />
+          <label for="catsLiveFosterBoth">Both</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for="sickFoster"
+          >Do your cats have any medical issues or contagious diseases? If yes,
+          please explain.
+        </label>
+        <textarea
+          name="sickFoster"
+          id="sickFoster"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="purple-bg-app">
+        <label for="dogCatFriendlyFoster"
+          >Do you own dogs? If yes, are they good with cats?
+        </label>
+        <textarea
+          name="dogCatFriendlyFoster"
+          id="dogCatFriendlyFoster"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="dogSize">Size of dog(s) owned: </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="dogSizeSm" id="dogSizeSm" />
+          <label for="dogSizeSm">0-15lb</label>
+          <input type="checkbox" name="dogSizeMd" id="dogSizeMd" />
+          <label for="dogSizeMd">16-25lb</label>
+          <input type="checkbox" name="dogSizeLg" id="dogSizeLg" />
+          <label for="dogSizeLg">26-39lb</label>
+          <input type="checkbox" name="dogSizeXLg" id="dogSizeXLg" />
+          <label for="dogSizeXLg">40lbs+</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="seperateRoom"
+          >For dogs over 30lbs who do not live with cats, do you have a way to
+          separate the animals while you are not at home or you are asleep?
+          <span class="req"
+            >Crate training, putting the cat in a room or putting up baby
+            gates?</span
+          >
+        </label>
+        <textarea
+          name="seperateRoom"
+          id="seperateRoom"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="vetFoster">Name of Veterinarian: </label>
+        <input type="text" name="vetFoster" id="vetFoster" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="vetAddFoster">Full address of your veterinarian </label>
+        <input type="text" name="vetAddFoster" id="vetAddFoster" />
+      </div>
+      <div class="white-bg-app">
+        <label for="vetNumFoster">Phone number of your veterinarian </label>
+        <input type="tel" name="vetNumFoster" id="vetNumFoster" />
       </div>
 
-      <!-- Are there other cats in the home? If yes, are they spayed/neutered?
- -->
+      <div class="purple-bg-app">
+        <label for="expFoster"
+          >What experience level do you have caring for cats?
+        </label>
+        <textarea name="expFoster" id="expFoster" cols="30" rows="4"></textarea>
+      </div>
+
+      <div class="white-bg-app">
+        <label for="medExpFoster"
+          >Do you have experience giving medication to cats?
+          <span class="req">(required)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input
+            type="checkbox"
+            name="medExpFosterYesFood"
+            id="medExpFosterYesFood"
+          />
+          <label for="medExpFosterYesFood">Yes - in food only</label>
+          <input
+            type="checkbox"
+            name="medExpFosterYesShot"
+            id="medExpFosterYesShot"
+          />
+          <label for="medExpFosterYesShot"
+            >Yes - Pills or Fluids Administered</label
+          >
+          <input type="checkbox" name="medExpFosterNo" id="medExpFosterNo" />
+          <label for="medExpFosterNo">No</label>
+          <input
+            type="checkbox"
+            name="medExpFosterWont"
+            id="medExpFosterWont"
+          />
+          <label for="medExpFosterWont">Do Not Want To</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="bottleFoster"
+          >Do you have experience in bottle feeding orphan kittens?
+          <span class="req"
+            >(Very young unweaned kittens must be fed every few hours, including
+            at night or they can die. Please keep your schedule in mind.)</span
+          >
+        </label>
+        <textarea
+          name="bottleFoster"
+          id="bottleFoster"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="otherFoster"
+          >Do you foster for other shelter or rescue groups?
+          <span class="req">(required)</span>
+        </label>
+        <div class="checkbox-app">
+          <input type="checkbox" name="otherFosterYes" id="otherFosterYes" />
+          <label for="otherFosterYes">Yes</label>
+
+          <input type="checkbox" name="otherFosterNo" id="otherFosterNo" />
+          <label for="otherFosterNo">No</label>
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="ifOtherFoster"
+          >If you fostered or are fostering for other shelters or groups, please
+          provide the rescue name and contact information as well as the type
+          and number of animals being fostered in your home at this time:</label
+        >
+        <textarea
+          name="ifOtherFoster"
+          id="ifOtherFoster"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="maxFoster"
+          >Fostering can be anywhere from a 2 week - 12 month (or longer)
+          commitment. What is the maximum length of time you are able to
+          foster?</label
+        >
+        <input type="text" name="maxFoster" id="maxFoster" />
+      </div>
+      <div class="purple-bg-app">
+        <label for="maxCatsFoster"
+          >What is the maximum number of cats/kittens you are interested in
+          fostering?
+        </label>
+        <input type="number" name="maxCatsFoster" id="maxCatsFoster" />
+      </div>
+      <div class="white-bg-app">
+        <label for="intFoster"
+          >Are you interested in fostering:
+          <span class="req">(please check all that apply)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input
+            type="checkbox"
+            name="intFosterHealthA"
+            id="intFosterHealthA"
+          />
+          <label for="intFosterHealthA">Healthy Adult Cats</label>
+          <input
+            type="checkbox"
+            name="intFosterHealthK"
+            id="intFosterHealthK"
+          />
+          <label for="intFosterHealthK">Healthy Kittens</label>
+          <input type="checkbox" name="intFosterColdA" id="intFosterColdA" />
+          <label for="intFosterColdA">Cats With Colds</label>
+          <input type="checkbox" name="intFosterColdK" id="intFosterColdK" />
+          <label for="intFosterColdK">Kittens With Colds</label>
+          <input type="checkbox" name="intFosterBottle" id="intFosterBottle" />
+          <label for="intFosterBottle">Bottle-Feeding Kittens</label>
+          <input type="checkbox" name="intFosterWean" id="intFosterWean" />
+          <label for="intFosterWean">Weaned Kittens</label>
+          <input type="checkbox" name="intFosterMom" id="intFosterMom" />
+          <label for="intFosterMom">Mom with Kittens</label>
+          <input
+            type="checkbox"
+            name="intFosterSpecial"
+            id="intFosterSpecial"
+          />
+          <label for="intFosterSpecial">Special Needs Cats</label>
+          <input type="checkbox" name="intFosterShy" id="intFosterShy" />
+          <label for="intFosterShy">Shy Cats/Kittens</label>
+          <input type="checkbox" name="intFosterHeathS" id="intFosterHealthS" />
+          <label for="intFosterHealthS">Healthy Senior Cats</label>
+          <input type="checkbox" name="intFosterHosp" id="intFosterHosp" />
+          <label for="intFosterHosp">Hospice Cats</label>
+        </div>
+      </div>
+
+      <div class="purple-bg-app">
+        <label for="whyFoster"
+          >Why are you interested in fostering cats? Do you have any concerns?
+        </label>
+        <textarea name="whyFoster" id="whyFoster" cols="30" rows="4"></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="ableFoster"
+          >Are you able to:
+          <span class="req">(please check all that apply)(required)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="ableFosterHV" id="ableFosterHV" />
+          <label for="ableFosterHV"
+            >Agree to a home visit prior to receiving a foster cat</label
+          >
+          <input type="checkbox" name="ableFosterTran" id="ableFosterTran" />
+          <label for="ableFosterTran"
+            >Transport your foster cat to vet appointments</label
+          >
+          <input type="checkbox" name="ableFosterMed" id="ableFosterMed" />
+          <label for="ableFosterMed">Administer medication if need be</label>
+          <input type="checkbox" name="ableFosterSoc" id="ableFosterSoc" />
+          <label for="ableFosterSoc"
+            >Provide SOS with photos of your foster cat to promote the cats on
+            all of our social media outlets</label
+          >
+          <input type="checkbox" name="ableFosterMeet" id="ableFosterMeet" />
+          <label for="ableFosterMeet"
+            >Agree to Meet-and-Greets with potential adopters</label
+          >
+        </div>
+      </div>
+      <div class="purple-bg-app">
+        <label for="refFoster"
+          >Please provide a personal reference.
+          <span class="req"> (Name, phone #, relationship to you)</span>
+        </label>
+        <textarea name="refFoster" id="refFoster" cols="30" rows="4"></textarea>
+      </div>
+      <div class="white-bg-app">
+        <label for="emerFoster">Please provide an emergency contact(s) </label>
+        <textarea
+          name="emerFoster"
+          id="emerFoster"
+          cols="30"
+          rows="4"
+        ></textarea>
+      </div>
+      <div class="purple-bg-app">
+        <label for="temperFoster"
+          >Are you aware of the potential risks fostering may pose to yourself
+          and other pets? S.O.S. makes no guarantees as to the temperament or
+          health of foster cats. <span class="req">(required)</span></label
+        >
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="temperFosterYes" id="temperFosterYes" />
+          <label for="temperFosterYes">Yes</label>
+          <input type="checkbox" name="temperFosterNo" id="temperFosterNo" />
+          <label for="temperFosterNo">No</label>
+          <input
+            type="checkbox"
+            name="temperFosterMore"
+            id="temperFosterMore"
+          />
+          <label for="temperFosterMore">Need More Information</label>
+        </div>
+      </div>
+      <div class="white-bg-app">
+        <label for=""
+          >Rules and Policies of SOS Cat Rescue AZ:
+          <span class="req">(required)</span>
+        </label>
+        <div class="checkbox-list-app">
+          <input type="checkbox" name="fosterOne" id="fosterOne" />
+          <label for="fosterOne"
+            >I agree to treat all SOS foster cat(s) with love and care like if
+            they were my own pets.</label
+          >
+          <input type="checkbox" name="fosterTwo" id="fosterTwo" />
+          <label for="fosterTwo"
+            >I agree to not declaw my SOS foster cat(s)</label
+          >
+          <input type="checkbox" name="fosterThree" id="fosterThree" />
+          <label for="fosterThree"
+            >I agree to take my foster cat(s)/kitten(s) to their vet
+            appointments or scheduled surgeries.
+          </label>
+          <input type="checkbox" name="fosterFour" id="fosterFour" />
+          <label for="fosterFour"
+            >I agree to keep my foster cat(s)/kitten(s) indoors at all times as
+            agreed in this application for their own safety.
+          </label>
+        </div>
+      </div>
+      <div class="consent-form consent-form-purple">
+        <p>
+          By signing this application, I am agreeing to all of SOS Cat Rescue AZ
+          's rules and policies listed . I also agree to abide by all local
+          animal ordinances, leases, laws and property ownership agreements as
+          they pertain to the legally defines number of pets allowed in any
+          human domicile or associated/attached properties. I also further agree
+          that, should I be in violation of any local animal ordinances, leases
+          and/or property ownership agreements, I hold harmless SOS Cat Rescue
+          AZ and all associated rescue organizations in all matters and assume
+          all legal and/or financial liabilities pertaining to any violations of
+          said ordinances, leases and/or agreements. <br /><br />I have read the
+          above application, agreement, and the rules and policies of SOS Cat
+          Rescue AZ as explained and, by signing and submitting this
+          application, I acknowledge and agree that all my answers are true and
+          I will abide by all the policies stated here. By initialing here, I
+          agree that If for any reason I am unable to continue to foster, I will
+          notify SOS Cat Rescue AZ at least seven days in advance so that SOS
+          Cat Rescue AZ can find another foster location for this animal. I
+          understand that foster homes are usually full and it may not be
+          possible for SOS Cat Rescue AZ to find immediate placement for my
+          foster cat should I no longer be able to care for him/her. I
+          understand that SOS Cat Rescue AZ has the right to approve or deny
+          this application. Please initial.
+        </p>
+        <input type="text" />
+
+        <div class="submit-app-container">
+          <button type="submit">submit</button>
+        </div>
+      </div>
     </form>
     <footer>
       <ul class="footer-nav">
-        <li><a href="./index.html">About SOS Cat Rescue AZ</a></li>
+        <li><a href="./about.html">About SOS Cat Rescue AZ</a></li>
         <li>
           <a class="dropdown-menu" href="#1">
             <span>
