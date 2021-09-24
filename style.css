@@ -118,16 +118,16 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .slide-img {
-  margin-top: 0vw;
+  margin-top: 3vw;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
@@ -140,7 +140,8 @@ button {
   border-radius: 5%;
   height: 18vw;
   width: 18vw;
-  margin-bottom: 10vw;
+  margin-bottom: 18vw;
+  margin-top: 2vw;
   z-index: -1;
   -webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -158,7 +159,7 @@ button {
   background: #e3d9e2;
   width: 18vw;
   height: 6vw;
-  margin-top: 20vw;
+  margin-top: 22vw;
   border-radius: 5%;
   -webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -407,12 +408,12 @@ li > a > span > i {
 
 .nav-logo {
   margin-left: 10vw;
-  height: 5vw;
+  height: 7vw;
 }
 
 .nav-icon {
   margin: 0 2vw;
-  font-size: 5vw;
+  font-size: 7vw;
 }
 
 .nav-menu {
