@@ -84,3 +84,11 @@ a {
 button {
   padding: 0.25rem;
 }
+
+.thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0%;
+}

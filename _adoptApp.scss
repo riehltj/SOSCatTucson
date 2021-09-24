@@ -30,10 +30,14 @@ label {
   margin: 2vw;
 }
 textarea {
+  padding: 2vw;
   width: 80%;
 }
 input {
+  width: 80%;
+
   margin: 2vw;
+  padding: 2vw;
 }
 .req {
   font-size: clamp(0.75rem, 3vw, 1.5rem);
@@ -72,6 +76,9 @@ input {
   align-items: center;
 }
 .submit-app-container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: clamp(1.25rem, 4vw, 5rem);
   font-family: $neucha;
   text-transform: uppercase;
@@ -83,7 +90,7 @@ input {
   border: none;
   border-radius: 50px;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 input[type="checkbox"] {
   height: clamp(0.5rem, 5vw, 5rem);
