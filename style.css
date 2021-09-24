@@ -5,48 +5,49 @@
   padding: 0;
 }
 
+html,
 body {
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 .white-bg {
   width: 100%;
   background: #fff;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  display: -webkit-box;
   -webkit-box-pack: center;
-  /* justify-content */
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  /* align-items */
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .purple-bg {
   width: 100%;
   background: #e3d9e2;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  display: -webkit-box;
   -webkit-box-pack: center;
-  /* justify-content */
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  /* align-items */
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h1 {
@@ -55,7 +56,6 @@ h1 {
   text-transform: uppercase;
   margin: 2% 10% 2% 10%;
   z-index: 2;
-  text-align: center;
 }
 
 h3 {
@@ -75,7 +75,7 @@ q,
 label,
 input,
 textarea {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
   font-family: "Alegreya Sans", sans-serif;
   margin: 2% 10% 2% 10%;
   z-index: 2;
@@ -393,7 +393,7 @@ li > a > span > i {
 
 .nav-container {
   width: 100%;
-  height: 10vw;
+  height: 12vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,12 +412,12 @@ li > a > span > i {
 
 .nav-logo {
   margin-left: 10vw;
-  height: 7vw;
+  height: 10vw;
 }
 
 .nav-icon {
   margin: 0 2vw;
-  font-size: 7vw;
+  font-size: 10vw;
 }
 
 .nav-menu {
@@ -531,6 +531,10 @@ li > a > span > i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.side-nav-container > ul > .top-nav-link {
+  border-top: none;
 }
 
 .side-nav-container > ul > li > a {
@@ -1209,7 +1213,7 @@ input {
 }
 
 input[type="checkbox"] {
-  height: clamp(0.5rem, 3vw, 2rem);
-  width: clamp(0.5rem, 3vw, 2rem);
+  height: clamp(0.5rem, 5vw, 5rem);
+  width: clamp(0.5rem, 5vw, 5rem);
 }
 /*# sourceMappingURL=style.css.map */
