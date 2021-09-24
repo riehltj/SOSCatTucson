@@ -12,37 +12,41 @@ body {
 .white-bg {
   width: 100%;
   background: #fff;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -webkit-box;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items */
 }
 
 .purple-bg {
   width: 100%;
   background: #e3d9e2;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -webkit-box;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items */
 }
 
 h1 {
@@ -703,9 +707,9 @@ li > a > span > i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -718,6 +722,7 @@ li > a > span > i {
   border-radius: 5%;
   height: 18vw;
   width: 18vw;
+  margin-top: 2vw;
   margin-bottom: 13vw;
   z-index: -1;
   -webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -730,7 +735,7 @@ li > a > span > i {
   background: white;
   width: 18vw;
   height: 6vw;
-  margin-top: 20vw;
+  margin-top: 25vw;
   border-radius: 5%;
   -webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -748,30 +753,34 @@ li > a > span > i {
   width: 18vw;
   height: 6vw;
   margin-bottom: 5vw;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -webkit-box;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items */
   z-index: 1;
 }
 
 .cat-name-adopt > a {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -webkit-box;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items */
 }
 
 .details-container {
@@ -780,12 +789,15 @@ li > a > span > i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: none;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items */
   width: 0;
   height: 100%;
   opacity: 0;
@@ -1047,19 +1059,21 @@ h4 {
 }
 
 .adoptApp {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  display: -webkit-box;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* justify-content */
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* align-items */
 }
 
 .purple-bg-app {

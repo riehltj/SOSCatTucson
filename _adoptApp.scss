@@ -3,6 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  display: -webkit-box;
+  -webkit-box-pack: center; /* justify-content */
+  -webkit-box-align: center; /* align-items */
 }
 .purple-bg-app {
   width: 100%;
