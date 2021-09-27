@@ -47,6 +47,11 @@
   z-index: -1;
 }
 
+.swiper-slide:hover:before {
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;

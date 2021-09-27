@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($darkPurple, 10%);
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+.nav-icon:hover {
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+
+// li > a:hover {
+//   color: $orange;
+//   transition: all 0.3s;
+// }
