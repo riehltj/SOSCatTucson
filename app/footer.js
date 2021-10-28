@@ -1,6 +1,7 @@
 display = 0;
 
 const subMenu = () => {
+    console.log(event.target)
     dropdown = event.target.nextSibling.nextSibling
     arrow = event.target
 

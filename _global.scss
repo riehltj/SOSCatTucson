@@ -35,7 +35,7 @@ h1 {
   text-transform: uppercase;
   margin: 2% 10% 2% 10%;
   z-index: 2;
-  // text-align: center;
+  margin: 0.5rem;
 }
 h3 {
   text-transform: capitalize;
@@ -85,4 +85,7 @@ button {
   justify-content: center;
   align-items: center;
   margin: 10% 0%;
+}
+span {
+  z-index: -3;
 }

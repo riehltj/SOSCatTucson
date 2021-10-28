@@ -94,6 +94,7 @@ h1 {
   text-transform: uppercase;
   margin: 2% 10% 2% 10%;
   z-index: 2;
+  margin: 0.5rem;
 }
 
 h3 {
@@ -161,6 +162,10 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin: 10% 0%;
+}
+
+span {
+  z-index: -3;
 }
 
 .swiper {
