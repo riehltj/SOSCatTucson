@@ -3,56 +3,58 @@ deliveryAPI = "3kylAhFTf0KH7heGr6zWEtmKLTbES6Rce_I-PqKM1gc";
 previewAPI = "jvLfyr3OHAlpChq5jb5taopbz4MHvTffk02tPanM5MU";
 
 baseURL = "https://cdn.contentful.com";
-
 dataURL = `${baseURL}/spaces/${spaceID}/entries?access_token=${deliveryAPI}`;
 
-const populateSwiper = (catImg) => {
-  console.log(catImg);
-};
+catData = [];
+catImg = [];
 
-const grabImg = (catData) => {
-  catImg = [];
-  for (let j = 0; j < Object.keys(catData).length; j++) {
-    let assetId = catData[j].imgs[0].sys.id;
+const selectDom = async (catData) => {
+  var fileName = location.href.split("/").slice(-1);
+  if (fileName[0] == "index.html") {
+    console.log(catData[0].name);
+    catName = catData[0].name;
+    displayImage = catData[0].imgs[0];
 
-    imgURL = `${baseURL}/spaces/${spaceID}/assets/${assetId}?access_token=${deliveryAPI}`;
-
-    fetch(imgURL)
-      .then((response) => response.json())
-      .then((imgData) => {
-        catImg = imgData.fields.file.url;
-        console.log(catImg);
-
-        baseDiv = document.getElementById("img-js");
-        let newImgTag = document.createElement("img");
-        newImgTag.src = catImg;
-        console.log(newImgTag);
-
-        document.getElementById("img-js").appendChild(newImgTag);
-        console.log("img updated");
-      });
+    const targetNode = document.getElementById("swiper-wrapper");
+    const baseEl = document.createElement("a");
+    baseEl.href = "./catPage.html";
+    baseEl.className = "swiper-slide";
+    //add other elements here, experiment
   }
-  populateSwiper(catImg);
 };
 
-fetch(dataURL)
-  .then((response) => response.json())
-  .then((data) => {
-    let numCats = data.items.length;
-    let catData = {};
+const buildCatObj = async (data, catImg, i) => {
+  catData[i] = {
+    name: data.items[i].fields.name,
+    age: data.items[i].fields.age,
+    bio: data.items[i].fields.bio,
+    imgs: catImg[i],
+    needs: data.items[i].fields.specialNeeds,
+  };
+};
 
-    for (let i = 0; i < numCats; i++) {
-      let apiData = data.items[i].fields;
+const getImgUrl = async (assetId, i) => {
+  imgURL = `${baseURL}/spaces/${spaceID}/assets/${assetId}?access_token=${deliveryAPI}`;
+  const response = await fetch(imgURL);
+  const imgData = await response.json();
+  catImg[i] = imgData.fields.file.url;
+};
 
-      catData[i] = {
-        name: data.items[i].fields.name,
-        age: apiData.age,
-        bio: apiData.bio,
-        imgs: apiData.imgs,
-        needs: apiData.specialNeeds,
-      };
-    }
+const getAssetId = async (data) => {
+  numCats = Object.keys(data.items).length;
+  assetId = "";
+  for (i = 0; i < numCats; i++) {
+    assetId = data.items[i].fields.imgs[0].sys.id;
+    await getImgUrl(assetId, i);
+    await buildCatObj(data, catImg, i);
+  }
+  selectDom(catData);
+};
 
-    grabImg(catData);
-  });
-//
+const init = async () => {
+  const response = await fetch(dataURL);
+  const data = await response.json();
+  getAssetId(data);
+};
+
+init();
