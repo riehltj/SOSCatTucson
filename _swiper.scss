@@ -1,56 +1,61 @@
-$swipe-height: 25vw;
-$swipe-width: 80%;
-
 .swiper {
-  margin-top: 5vw;
-  height: $swipe-height;
+  // margin-top: 5vw;
+  // height: $swipe-height;
   width: $swipe-width;
 }
 
 .swiper-slide {
-  height: $swipe-height;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  height: $swipe-height;
+
 }
 
 .slide-img {
   margin-top: calc((#{$swipe-height} * 0.025));
-  width: calc((#{$swipe-height} * 0.35));
-  border-radius: 50%;
+  max-width: calc((#{$swipe-height} * 0.5));
+  max-height: calc((#{$swipe-height} * 0.5));
+  border-radius: 100%;
 }
+
 //background img
-.swiper-slide:after {
-  content: "";
-  position: absolute;
+.swiper-img-bg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   background: $darkPurple;
-  border-radius: 5%;
-  height: calc((#{$swipe-height} * 0.45));
-  width: calc((#{$swipe-height} * 0.4));
+  border-radius: 1vw;
+  height: calc((#{$swipe-height} * 0.65));
+  width: calc((#{$swipe-height} * 0.6));
 
   z-index: -1;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
+
+//Name
 .cat-name {
-  margin-top: calc((#{$swipe-height} * 0.15));
+
   font-family: $neucha;
   font-size: calc((#{$swipe-height} * 0.1));
 }
 
-.swiper-slide:before {
-  content: "";
-  position: absolute;
+//Box around Name
+.swiper-cat-name-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $lightPurple;
   width: calc((#{$swipe-height} * 0.5));
   height: calc((#{$swipe-height} * 0.15));
-  margin-top: calc((#{$swipe-height} * 0.5));
+  margin-top: calc((#{$swipe-height} * 0.05));
   border-radius: 5%;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
 
-.swiper-slide:hover:before {
+.swiper-slide:hover .swiper-cat-name-bg {
   transform: scale(0.9);
   transition: all 0.3s;
 }
@@ -58,7 +63,14 @@ $swipe-width: 80%;
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  margin: auto;
-  top: 38vw;
   color: $darkPurple;
+  top: calc((#{$swipe-height}/2 + #{$nav-height} + #{$height_hero})); //$nav-height
+}
+
+.swiper-button-prev {
+  margin-right: 95%;
+}
+
+.swiper-button-next {
+  margin-left: 95%;
 }

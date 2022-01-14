@@ -130,6 +130,13 @@ p {
   z-index: 2;
 }
 
+p {
+  font-size: clamp(0.1rem, 6vw, 1.2rem);
+  font-family: "Alegreya Sans", sans-serif;
+  margin: 2% 20% 0% 20%;
+  z-index: 2;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -175,12 +182,10 @@ span {
 }
 
 .swiper {
-  height: 32vw;
-  width: 80vw;
+  width: 80%;
 }
 
 .swiper-slide {
-  height: 32vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,55 +193,67 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 15vw;
 }
 
 .slide-img {
-  margin-top: 3vw;
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
+  margin-top: calc((15vw * 0.025));
+  max-width: calc((15vw * 0.5));
+  max-height: calc((15vw * 0.5));
+  border-radius: 100%;
 }
 
-.swiper-slide:after {
-  content: "";
-  position: absolute;
+.swiper-img-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: #8a008d;
-  border-radius: 5%;
-  height: 18vw;
-  width: 18vw;
-  margin-bottom: 18vw;
-  margin-top: 2vw;
+  border-radius: 1vw;
+  height: calc((15vw * 0.65));
+  width: calc((15vw * 0.6));
   z-index: -1;
   -webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
 .cat-name {
-  margin-top: 6vw;
   font-family: "Neucha", sans-serif;
-  font-size: clamp(1rem, 3vw, 3rem);
+  font-size: calc((15vw * 0.1));
 }
 
-.swiper-slide:before {
-  content: "";
-  position: absolute;
+.swiper-cat-name-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #e3d9e2;
-  width: 18vw;
-  height: 6vw;
-  margin-top: 22vw;
+  width: calc((15vw * 0.5));
+  height: calc((15vw * 0.15));
+  margin-top: calc((15vw * 0.05));
   border-radius: 5%;
   -webkit-box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
           box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
 
-.swiper-slide:hover:before {
+.swiper-slide:hover .swiper-cat-name-bg {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   -webkit-transition: all 0.3s;
@@ -246,9 +263,16 @@ span {
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
-  margin: auto;
-  top: 45vw;
   color: #8a008d;
+  top: calc((15vw/2 + clamp(0.25rem, 12vw, 6rem) + clamp(0.25rem, 25vw, 12rem)));
+}
+
+.swiper-button-prev {
+  margin-right: 95%;
+}
+
+.swiper-button-next {
+  margin-left: 95%;
 }
 
 .cat-parent-container {
@@ -267,7 +291,7 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: clamp(0.25rem, 25vw, 18rem);
+  height: clamp(0.25rem, 25vw, 12rem);
 }
 
 .cat-parent {
@@ -293,7 +317,7 @@ span {
 .cat-parent-btn {
   margin: auto;
   background: #8a008d;
-  width: 35vw;
+  width: 6rem;
   height: 100%;
   border-radius: 50px;
   border: none;
@@ -314,14 +338,15 @@ span {
           align-items: center;
   color: white;
   font-family: "Neucha", sans-serif;
+  margin-top: 1rem;
 }
 
 .cat-parent-btn > h3 {
-  height: clamp(1.5rem, 4vw, 5rem);
+  height: 50%;
   font-family: "Neucha", sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: clamp(0.1rem, 6vw, 1.2rem);
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -336,9 +361,8 @@ span {
 
 .cat-parent-btn-search {
   color: white;
-  font-size: clamp(1rem, 3vw, 5rem);
-  margin-bottom: 0.25rem;
-  margin-right: 0.25rem;
+  font-size: clamp(0.1rem, 6vw, 1.2rem);
+  padding-right: 0.25rem;
 }
 
 .cat-parent-form {
@@ -365,6 +389,11 @@ span > a {
   margin-left: 87vw;
   margin-top: 3vw;
   z-index: 1;
+}
+
+.bg-img {
+  width: calc(clamp(0.25rem, 25vw, 12rem) - 15%);
+  margin-right: 10%;
 }
 
 footer {
@@ -497,7 +526,7 @@ li > a > span > i {
 
 .nav-menu {
   margin-left: auto;
-  margin-right: 5vw;
+  margin-right: 10%;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
 }

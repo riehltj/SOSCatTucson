@@ -1,20 +1,23 @@
 .nav-container {
   width: 100%;
-  height: clamp(0.25rem, 12vw, 6rem);
+  height: $nav-height;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   border-bottom: solid 0.5vw $darkPurple;
 }
+
 .nav-logo {
   margin-left: 10vw;
   height: clamp(1rem, 10vw, 2.5rem);
 }
+
 .nav-icon {
   margin: 0 2vw;
   font-size: clamp(1rem, 10vw, 3rem);
 }
+
 .nav-menu {
   margin-left: auto;
   margin-right: 10%;
@@ -75,7 +78,8 @@
   width: 60vw;
   margin-left: 40vw;
 }
-.side-nav-container > ul {
+
+.side-nav-container>ul {
   margin-top: 0.5rem;
   height: 100%;
   width: 100%;
@@ -84,7 +88,8 @@
   justify-content: flex-start;
   align-items: center;
 }
-.side-nav-container > ul > li {
+
+.side-nav-container>ul>li {
   width: 80%;
   height: 100%;
   font-family: $neucha;
@@ -94,11 +99,12 @@
   justify-content: center;
   align-items: center;
 }
-.side-nav-container > ul > .top-nav-link {
+
+.side-nav-container>ul>.top-nav-link {
   border-top: none;
 }
 
-.side-nav-container > ul > li > a {
+.side-nav-container>ul>li>a {
   width: 100%;
   height: 100%;
   display: flex;
