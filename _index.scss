@@ -1,3 +1,5 @@
+$height_hero: 25%;
+
 .cat-parent-container {
   background: $lightPurple;
   padding: 2% 2% 2% 2%;
@@ -5,7 +7,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: clamp(0.25rem, 25vw, 18rem);
+  // height: clamp(0.25rem, 25vw, 18rem);
+  height: $height_hero;
 }
 
 .cat-parent {
@@ -22,7 +25,7 @@
 .cat-parent-btn {
   margin: auto;
   background: $darkPurple;
-  width: 35vw;
+  width: 6rem;
   height: 100%;
   border-radius: 50px;
   border: none;
@@ -33,14 +36,15 @@
   align-items: center;
   color: white;
   font-family: $neucha;
+  margin-top: 1rem;
 }
 
 .cat-parent-btn > h3 {
-  height: clamp(1.5rem, 4vw, 5rem);
+  height: 50%;
   font-family: $neucha;
   text-decoration: none;
   color: #fff;
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: $M-font;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -49,9 +53,8 @@
 
 .cat-parent-btn-search {
   color: white;
-  font-size: clamp(1rem, 3vw, 5rem);
-  margin-bottom: 0.25rem;
-  margin-right: 0.25rem;
+  font-size: $M-font;
+  padding-right: 0.25rem;
 }
 .cat-parent-form {
   padding: 0;
@@ -76,4 +79,9 @@ span > a {
   margin-left: 87vw;
   margin-top: 3vw;
   z-index: 1;
+}
+
+.bg-img {
+  width: calc(#{$height_hero} - 15%);
+  margin-right: 10%;
 }
