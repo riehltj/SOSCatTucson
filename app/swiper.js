@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     loop: true,
     spaceBetween: 0,
@@ -19,3 +19,4 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: '.swiper-button-prev'
     }
 });
+

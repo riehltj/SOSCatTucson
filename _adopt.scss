@@ -44,7 +44,7 @@
   display: grid;
   position: relative;
   grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(4, 24%);
+  grid-template-rows: repeat(4, 50%);
   gap: 2vw;
   justify-content: center;
   align-items: center;
@@ -145,6 +145,7 @@
 
 .flex {
   display: flex;
+  // border: red 5px solid;
 }
 
 .details-container > .cat-container {
@@ -160,8 +161,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  // opacity: 0;
+  align-items: left;
 }
 
 .details > .cat-name-adopt {
@@ -175,4 +175,12 @@
 
 .details > p {
   font-size: clamp(0.75rem, 3vw, 5rem);
+}
+
+.hide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
