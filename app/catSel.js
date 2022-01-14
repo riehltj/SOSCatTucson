@@ -1,12 +1,12 @@
+
 [...document.querySelectorAll('.cat-container')].forEach(function (link) {
     link.addEventListener('click', function (link) {
-        console.log(link)
         let hideChk = link.target.classList[0];
         let idNum = link.currentTarget.id.match(/\d+/)[0];
         let rem = idNum / 3 % 1;
 
         if (hideChk == "hide") {
-            // tp = link.currentTarget.parentElement.previousElementSibling
+            tp = link.currentTarget.parentElement.previousElementSibling
             if (rem < 0.3) {
                 console.log("Right Column");
                 right = link.currentTarget.parentElement.previousElementSibling;
@@ -99,3 +99,4 @@
     });
 
 });
+
