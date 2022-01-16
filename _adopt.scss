@@ -1,10 +1,8 @@
-$adopt-size: 10vw;
-
 .adopt-btn {
   margin: auto;
   background: $darkPurple;
   width: clamp(1rem, 65vw, 25rem);
-  border-radius: 50px;
+  border-radius: 2vw;
   border: none;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   display: flex;
@@ -54,7 +52,7 @@ $adopt-size: 10vw;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  background: $darkPurple;
+  background: white;
   padding: 2%;
   border-radius: 2vw;
 
@@ -62,14 +60,14 @@ $adopt-size: 10vw;
 
 .cat-container {
   position: relative;
-  background: $lightPurple;
+  background: $darkPurple;
   z-index: -1;
   border-radius: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 50%;
+  width: 45%;
   height: 90%;
 }
 
@@ -81,7 +79,6 @@ $adopt-size: 10vw;
   height: calc(#{$adopt-size} *.55);
   width: calc(#{$adopt-size} * .55);
   margin-top: 0.25vw;
-
   z-index: -1;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }

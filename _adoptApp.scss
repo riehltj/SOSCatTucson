@@ -4,9 +4,12 @@
   justify-content: center;
   align-items: center;
   display: -webkit-box;
-  -webkit-box-pack: center; /* justify-content */
-  -webkit-box-align: center; /* align-items */
+  -webkit-box-pack: center;
+  /* justify-content */
+  -webkit-box-align: center;
+  /* align-items */
 }
+
 .purple-bg-app {
   width: 100%;
   background: $lightPurple;
@@ -16,6 +19,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 .white-bg-app {
   width: 100%;
   background: #fff;
@@ -28,21 +32,26 @@
 
 label {
   margin: 2vw;
+  padding: 0.25vw;
 }
-textarea {
-  padding: 2vw;
-  width: 80%;
-}
-input {
-  width: 80%;
 
-  margin: 2vw;
-  padding: 2vw;
+textarea {
+  padding: 1vw;
+  width: 60%;
 }
+
+input {
+  width: 60%;
+  margin: 2vw;
+  padding: 0.25vw;
+  outline: solid grey 1px;
+}
+
 .req {
-  font-size: clamp(0.75rem, 3vw, 1.5rem);
+  font-size: $S-font;
   color: $darkPurple;
 }
+
 .checkbox-list-app {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -50,6 +59,7 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 .checkbox-app {
   display: flex;
   flex-direction: row;
@@ -65,6 +75,7 @@ input {
   align-items: center;
   width: 100%;
 }
+
 .consent-form-purple {
   background: $lightPurple;
 }
@@ -75,11 +86,12 @@ input {
   justify-content: center;
   align-items: center;
 }
-.submit-app-container > button {
+
+.submit-app-container>button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: clamp(1.25rem, 4vw, 5rem);
+  font-size: $L-font;
   font-family: $neucha;
   text-transform: uppercase;
   margin: 4vw;
@@ -92,7 +104,8 @@ input {
   width: 100%;
   padding: 0.5rem;
 }
+
 input[type="checkbox"] {
-  height: clamp(0.5rem, 5vw, 5rem);
-  width: clamp(0.5rem, 5vw, 5rem);
+  height: $S-font;
+  width: $S-font;
 }

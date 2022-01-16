@@ -14,7 +14,7 @@ $swipe-height: 20vw;
 $swipe-width: 80%;
 $height_hero: clamp(0.25rem, 25vw, 12rem);
 $hero-cat-width: clamp(0.25rem, 25vw, 11rem);
-
+$adopt-size: 10vw;
 
 // Margins
 $nav-top: 3vw;
@@ -85,7 +85,7 @@ input,
 textarea {
   font-size: $S-font;
   font-family: $alegra;
-  margin: 2% 10% 2% 10%;
+  margin: 2vw;
   z-index: 2;
 }
 
@@ -96,12 +96,7 @@ p {
   z-index: 2;
 }
 
-p {
-  font-size: $S-font;
-  font-family: $alegra;
-  margin: 2% 20% 0% 20%;
-  z-index: 2;
-}
+
 
 a {
   text-decoration: none;
