@@ -1,8 +1,9 @@
+$adopt-size: 10vw;
+
 .adopt-btn {
   margin: auto;
   background: $darkPurple;
-  width: 65vw;
-  height: 8vw;
+  width: clamp(1rem, 65vw, 25rem);
   border-radius: 50px;
   border: none;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -14,12 +15,12 @@
   font-family: $neucha;
   text-align: center;
   text-transform: uppercase;
-  font-size: clamp(1rem, 4vw, 4rem);
+  font-size: $L-font;
 }
 
 .pencil-icon {
   color: white;
-  font-size: clamp(1rem, 4vw, 4rem);
+  font-size: $L-font;
   margin-right: 0.25rem;
   margin-bottom: 0.25rem;
 }
@@ -35,32 +36,41 @@
   justify-content: center;
   align-items: flex-start;
 }
-.cat-img > img {
-  width: 15vw;
-  height: 15vw;
-  border-radius: 50%;
+
+.cat-img>img {
+  max-width: calc(#{$adopt-size} / 2);
+  height: calc(#{$adopt-size} / 2);
 }
+
 .grid-container {
+
+  width: 60vw;
+  margin: auto;
   display: grid;
   position: relative;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: repeat(4, 50%);
-  gap: 2vw;
+  gap: 1vw;
   justify-content: center;
   align-items: center;
   z-index: 1;
   background: $darkPurple;
   padding: 2%;
+  border-radius: 2vw;
+
 }
+
 .cat-container {
   position: relative;
   background: $lightPurple;
   z-index: -1;
-  border-radius: 2vw;
+  border-radius: 1vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 50%;
+  height: 90%;
 }
 
 .cat-container::after {
@@ -68,53 +78,47 @@
   position: absolute;
   background: white;
   border-radius: 5%;
-  height: 18vw;
-  width: 18vw;
-  margin-top: 2vw;
-  margin-bottom: 13vw;
+  height: calc(#{$adopt-size} *.55);
+  width: calc(#{$adopt-size} * .55);
+  margin-top: 0.25vw;
+
   z-index: -1;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
+
 .cat-container::before {
   content: "";
   position: absolute;
   background: white;
-  width: 18vw;
-  height: 6vw;
-  margin-top: 25vw;
+  width: calc(#{$adopt-size} / 2);
+  height: calc(#{$adopt-size} / 6);
+  margin-top: calc(#{$adopt-size} *.60);
   border-radius: 5%;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
+
 .cat-img {
-  margin-top: 4vw;
+  margin-top: 0.5vw;
+
 }
 
 .cat-name-adopt {
-  margin-top: 6vw;
+  margin: auto;
   font-family: "Neucha", cursive;
-  font-size: clamp(1rem, 3vw, 3rem);
-  width: 18vw;
-  height: 6vw;
-  margin-bottom: 5vw;
+  font-size: $S-font;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: -webkit-box;
-  -webkit-box-pack: center; /* justify-content */
-  -webkit-box-align: center; /* align-items */
   z-index: 1;
 }
 
-.cat-name-adopt > a {
-  height: 100%;
+.cat-name-adopt>a {
+  height: 75%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: -webkit-box;
-  -webkit-box-pack: center; /* justify-content */
-  -webkit-box-align: center; /* align-items */
 }
 
 .details-container {
@@ -122,11 +126,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: none;
-  -webkit-box-pack: center; /* justify-content */
-  -webkit-box-align: center; /* align-items */
   width: 0;
-  height: 100%;
+  height: 90%;
   opacity: 0;
   grid-template-rows: 0;
   z-index: -1;
@@ -145,18 +146,19 @@
 
 .flex {
   display: flex;
-  // border: red 5px solid;
 }
 
-.details-container > .cat-container {
+.details-container>.cat-container {
   width: 30%;
   background: transparent;
 }
-.details-container > .cat-container:before,
-.details-container > .cat-container:after {
+
+.details-container>.cat-container:before,
+.details-container>.cat-container:after {
   background: $lightPurple;
 }
-.details-container > .details {
+
+.details-container>.details {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -164,23 +166,30 @@
   align-items: left;
 }
 
-.details > .cat-name-adopt {
+.details>.cat-name-adopt {
   background: $lightPurple;
-  width: 20vw;
-  height: 8vw;
-  margin: 2vw;
+  width: 10vw;
+  height: $L-font;
+  margin: 0.25vw;
   border-radius: 2vw;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 
-.details > p {
-  font-size: clamp(0.75rem, 3vw, 5rem);
+.details>p {
+  font-size: $S-font;
 }
 
 .hide {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 90%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
 }

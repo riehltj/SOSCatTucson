@@ -22,8 +22,8 @@
 .cat-parent-btn {
   margin: auto;
   background: $darkPurple;
-  width: 6rem;
-  height: 100%;
+  width: clamp(5rem, 25vw, 12rem);
+  // height: 100%;
   border-radius: 50px;
   border: none;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
@@ -41,7 +41,7 @@
   font-family: $neucha;
   text-decoration: none;
   color: #fff;
-  font-size: $M-font;
+  font-size: $L-font;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@
 
 .cat-parent-btn-search {
   color: white;
-  font-size: $M-font;
+  font-size: $L-font;
   padding-right: 0.25rem;
 }
 
@@ -60,11 +60,13 @@
 }
 
 .cat-parent-title {
+  font-size: $XL-font;
   padding: 0;
   margin: 0;
   width: 100%;
   height: 50%;
   text-align: center;
+
 }
 
 span>a {
@@ -72,15 +74,15 @@ span>a {
 }
 
 .header-float-img {
-  width: 10vw;
+  width: calc(#{$hero-cat-width} / 2);
   position: absolute;
   margin: 0;
-  margin-left: 87vw;
+  margin-left: 85vw;
   margin-top: 3vw;
   z-index: 1;
 }
 
 .bg-img {
-  width: calc(#{$height_hero} - 15%);
-  margin-right: 10%;
+  width: (#{$hero-cat-width});
+  margin-right: 15vw;
 }

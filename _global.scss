@@ -1,19 +1,28 @@
 //Header Font
-$XL-font: clamp(0.1rem, 10vw, 1.5em);
-$L-font: clamp(0.1rem, 8vw, 1.4rem);
-$M-font: clamp(0.1rem, 6vw, 1.2rem);
-$S-font: clamp(0.1rem, 4vw, 0.75rem);
-$XS-font: clamp(0.1rem, 2vw, 0.5rem);
+
+$XL-font: clamp(0.5rem, 6vw, 2.5rem); //HERO
+$L-font: clamp(0.4rem, 5vw, 2rem); //H1 & BUTTON
+$M-font: clamp(0.3rem, 4vw, 1.8rem); // 
+$S-font: clamp(0.1rem, 3vw, 1.5rem); //P
+$XS-font: clamp(0.1rem, 2vw, 1rem); //Dislaimer
+
+
 //Widths & Heights
 $width-main: 100%;
 $nav-height: clamp(0.25rem, 12vw, 6rem);
-$swipe-height: 15vw;
+$swipe-height: 20vw;
 $swipe-width: 80%;
 $height_hero: clamp(0.25rem, 25vw, 12rem);
+$hero-cat-width: clamp(0.25rem, 25vw, 11rem);
 
+
+// Margins
+$nav-top: 3vw;
 
 * {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -50,7 +59,7 @@ body {
 }
 
 h1 {
-  font-size: $XL-font;
+  font-size: $L-font;
   font-family: $neucha;
   text-transform: uppercase;
   margin: 2% 20% 2% 20%;
@@ -63,7 +72,7 @@ h3 {
 }
 
 h4 {
-  font-size: $L-font;
+  font-size: $S-font;
   font-family: $neucha;
   text-transform: uppercase;
   margin: 2% 20% 2% 20%;
@@ -74,21 +83,21 @@ q,
 label,
 input,
 textarea {
-  font-size: $M-font;
+  font-size: $S-font;
   font-family: $alegra;
   margin: 2% 10% 2% 10%;
   z-index: 2;
 }
 
 p {
-  font-size: $M-font;
+  font-size: $S-font;
   font-family: $alegra;
   margin: 2% 20% 0% 20%;
   z-index: 2;
 }
 
 p {
-  font-size: $M-font;
+  font-size: $S-font;
   font-family: $alegra;
   margin: 2% 20% 0% 20%;
   z-index: 2;

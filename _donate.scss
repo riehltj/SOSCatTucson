@@ -1,13 +1,18 @@
 .wishlist {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: $S-font;
   font-family: $alegra;
   margin: 5% 10% 2% 10%;
   z-index: 2;
 }
-.wishlist > li {
+
+.wishlist>li {
   margin-left: 4vw;
 }
 
 .special-li {
   color: $darkPurple;
+}
+
+.paypal {
+  margin: 1vw;
 }

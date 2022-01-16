@@ -1,4 +1,5 @@
 .nav-container {
+  margin-top: $nav-top;
   width: 100%;
   height: $nav-height;
   display: flex;
@@ -9,18 +10,19 @@
 }
 
 .nav-logo {
-  margin-left: 10vw;
-  height: clamp(1rem, 10vw, 2.5rem);
+  margin-left: 15vw;
+  height: $XL-font;
 }
 
 .nav-icon {
   margin: 0 2vw;
-  font-size: clamp(1rem, 10vw, 3rem);
+  font-size: $XL-font;
+
 }
 
 .nav-menu {
   margin-left: auto;
-  margin-right: 10%;
+  margin-right: 15vw;
   transition: all 350ms ease-in-out;
 }
 
@@ -38,24 +40,24 @@
   height: 0vw;
   visibility: hidden;
   margin-top: 0vw;
-  margin-left: 38vw;
+  margin-left: 33vw;
   background: $darkPurple;
   color: transparent;
   position: absolute;
   border: 3px solid white;
   font-family: $neucha;
-  font-size: clamp(0.5rem, 2vw, 2rem);
-  width: 40vw;
+  font-size: $XS-font;
+  width: 10vw;
   z-index: 98;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border-radius: 2vw;
   transition: all 350ms ease-in-out;
 }
 
 .location-popout-container.active {
-  height: 20vw;
+  height: 10vw;
   visibility: visible;
-  margin-top: 25vw;
+  margin-top: calc(#{$nav-height} * 2.5);
   color: white;
 }
 
@@ -91,9 +93,9 @@
 
 .side-nav-container>ul>li {
   width: 80%;
-  height: 100%;
+  height: 50%;
   font-family: $neucha;
-  font-size: clamp(1.25rem, 4vw, 2.5rem);
+  font-size: $L-font;
   border-top: 2px solid white;
   display: flex;
   justify-content: center;

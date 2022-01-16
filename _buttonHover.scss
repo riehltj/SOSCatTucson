@@ -13,13 +13,15 @@
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: darken($darkPurple, 10%);
+    background-color: lighten($darkPurple, 10%);
     transition: all 0.3s;
     border-radius: 10rem;
-    z-index: -1;
+    z-index: -10;
   }
+
   &:hover {
     color: #fff;
+
     &:before {
       width: 100%;
     }

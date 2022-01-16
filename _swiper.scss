@@ -1,6 +1,5 @@
 .swiper {
-  // margin-top: 5vw;
-  // height: $swipe-height;
+  height: $swipe-height;
   width: $swipe-width;
 }
 
@@ -14,10 +13,13 @@
 }
 
 .slide-img {
-  margin-top: calc((#{$swipe-height} * 0.025));
+  margin-top: calc((#{$swipe-height} * 0.05));
   max-width: calc((#{$swipe-height} * 0.5));
   max-height: calc((#{$swipe-height} * 0.5));
-  border-radius: 100%;
+  border-radius: 0.5rem;
+  border: 0.25vw white solid;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+
 }
 
 //background img
@@ -29,7 +31,6 @@
   border-radius: 1vw;
   height: calc((#{$swipe-height} * 0.65));
   width: calc((#{$swipe-height} * 0.6));
-
   z-index: -1;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 }
@@ -50,7 +51,7 @@
   width: calc((#{$swipe-height} * 0.5));
   height: calc((#{$swipe-height} * 0.15));
   margin-top: calc((#{$swipe-height} * 0.05));
-  border-radius: 5%;
+  border-radius: 1vw;
   box-shadow: 0.25rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   z-index: -1;
 }
@@ -64,7 +65,7 @@
 .swiper-button-next {
   position: absolute;
   color: $darkPurple;
-  top: calc((#{$swipe-height}/2 + #{$nav-height} + #{$height_hero})); //$nav-height
+  top: calc((#{$swipe-height}/2 + #{$nav-height} + #{$height_hero} + #{$nav-top})); //$nav-height
 }
 
 .swiper-button-prev {

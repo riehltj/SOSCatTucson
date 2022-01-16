@@ -3,8 +3,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  width: 80%;
+  width: 60%;
   margin: 2%;
+  margin: auto;
+  margin-top: 2vw;
 }
 
 .img-container {
@@ -15,18 +17,20 @@
   align-items: center;
 }
 
-.img-wrapper > img {
-  margin: 2vw;
-  width: 18vw;
-  height: 18vw;
-  border-radius: 50%;
+.img-wrapper>img {
+  margin: 1vw;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 25%;
 }
+
 .bio-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
 .bio {
   display: flex;
   flex-direction: column;
@@ -35,21 +39,23 @@
 }
 
 .back-btn {
-  height: clamp(1.5rem, 5vw, 6rem);
-  width: 100%;
+  height: $XL-font;
+  width: 75%;
   font-family: $neucha;
   text-decoration: none;
   background: $lightPurple;
-  font-size: clamp(1rem, 3vw, 5rem);
+  font-size: $L-font;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 2vw;
 }
+
 .special-needs {
   color: $darkPurple;
 }
+
 .bioJs {
   font-size: clamp(1rem, 3vw, 2rem);
   font-family: $alegra;
