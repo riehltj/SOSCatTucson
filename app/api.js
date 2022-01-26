@@ -169,7 +169,7 @@ const buildAdopt = (apiData, numCats, catImgUrl) => {
     let jsImg = catImgUrl[i];
 
     shownDiv = document.createElement('div');
-    shownDiv.id = `cat${i+1}`
+    shownDiv.id = `cat${i + 1}`
     shownDiv.className = 'cat-container'
 
     imgDiv = document.createElement('div')
@@ -201,7 +201,7 @@ const buildAdopt = (apiData, numCats, catImgUrl) => {
 
     containerDiv = document.createElement('div');
     containerDiv.className = 'cat-container'
-    containerDiv.id = `$cat${i+1}`
+    containerDiv.id = `$cat${i + 1}`
     imgDiv = document.createElement('div')
     imgDiv.className = 'cat-img'
 
@@ -316,11 +316,15 @@ const buildIndex = async (apiData, numCats, catImgUrl) => {
 const selectDomPage = async (catImgUrl, apiData, numCats) => {
   let path = window.location.pathname;
   let page = path.split("/").pop();
+  console.log(page)
   // ---------------------Choices of Pages------------------------
   if (page == 'index.html') {
     buildIndex(apiData, numCats, catImgUrl);
   } else if (page == 'adopt.html') {
     buildAdopt(apiData, numCats, catImgUrl)
+  }
+  else {
+    buildIndex(apiData, numCats, catImgUrl);
   }
 
 }
@@ -354,8 +358,6 @@ const init = async () => {
   let response = await fetch(dataURL);
   let data = await response.json();
   getCatData(data);
-
-
 };
 
 init();
