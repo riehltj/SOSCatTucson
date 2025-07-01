@@ -2,6 +2,8 @@
 
 A simple and responsive frontend website built for a local cat rescue organization. This was my first project, created using vanilla HTML, CSS, and JavaScript.
 
+Check it out here! https://riehltj.github.io/SOSCatTucson/
+
 ## Features
 
 - Responsive layout with mobile-friendly design
